@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ReleaseVersion>0.1.1</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <Description>CLI for Kotori</Description>
+    <PackageVersion>0.1.1</PackageVersion>
+    <Authors>frohikey</Authors>
+    <VersionPrefix>0.1.1</VersionPrefix>
+    <AssemblyVersion>0.1.1</AssemblyVersion>
+    <FileVersion>$(VersionPrefix)</FileVersion>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+    <PackageReference Include="CommandLineParser" Version="2.1.1-beta" />
+    <PackageReference Include="YamlDotNet" Version="4.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Outputs\" />
+    <Folder Include="Tokens\" />
+    <Folder Include="Storages\" />
+  </ItemGroup>
+</Project>
